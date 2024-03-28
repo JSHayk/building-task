@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building task</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="building">
+        <div class="building__fields">
+          <div class="building__field">
+            <input
+              class="building__field--input generate"
+              type="text"
+              placeholder="Generate floors"
+            />
+            <button class="building__field--button generate">Generate</button>
+          </div>
+          <div class="building__field find">
+            <input
+              class="building__field--input find"
+              type="text"
+              placeholder="Find home"
+            />
+            <button class="building__field--button find">Find</button>
+          </div>
+        </div>
+        <div class="building__content">
+          <h2 class="building__content--label">Result</h2>
+          <div class="building__content__result">
+            <div class="building__content__result__item">
+              <span class="building__content__result--label">Floor:</span>
+              <span class="building__content__result--text floor">-</span>
+            </div>
+            <span class="building__content__result__item home">
+              <span class="building__content__result--label">Home:</span>
+              <span class="building__content__result--text home">-</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
